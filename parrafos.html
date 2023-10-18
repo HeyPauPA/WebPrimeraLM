@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!----- PAGINA WEB ----->
+
+<body>
+    <div class="container shadow">
+        <!----- CABECERA ----->
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/Imagen-Logo-Friki.png" alt="logoFriki" width="90" ></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!----- CUERPO DE PAGINA WEB ----->
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-wineRed text-white py-3">EJERCICIO PÁRRAFOS</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home">
+                    <h1 class="text-center">Párrafos</h1>
+                </div>
+            </div>
+
+            <!-- TIPOS DE PÁRRAFO -->
+            <p>Voy a hacer un parrafo q se hace con la letra p
+                para poner lore ipsum se escribe lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, placeat assumenda. Maxime unde
+                debitis non provident porro cumque iure sunt a temporibus. Ea, quisquam repellendus quasi quae incidunt
+                minima amet!</p>
+            <p>Entre cada parrafo hay un linea en blanco<br>Para poner un parrafo debajo sin linea blanca se pone con br
+                y queda asi<br></p>
+
+            <p>Para hacer encabezados usamos la etiqueta h1-h6</p>
+
+            <!-- TIPOS DE ENCABEZADOS -->
+            <h1>Encabezado tamaño H1</h1>
+            <h2>Encabezado tamaño H2</h2>
+            <h3>Encabezado tamaño H3</h3>
+            <h4>Encabezado tamaño H4</h4>
+            <h5>Encabezado tamaño H5</h5>
+            <h6>Encabezado tamaño H6</h6>
+        </main>
+
+        <p>Para poner la letra en negrita usamos la etiqueta strong
+            <strong>Esto esta escrito en negrita</strong>
+        </p>
+        <p>Para poner cursiva se usa la etiqueta em <em>Esto esta en cursiva</em></p>
+
+        <p>Para poner subindices y superindices se pone sub y sup rsepectivamente</p>
+        <p>x <sub>2</sub> + y <sup>2 <sup>a</sup></sup></p>
+
+        <p>Hay veces q querremos darle diseño a un pequeño contenido y no hay etiquetas para ello. En este caso usaremos
+            la etiqueta span</p>
+        <p>Con esto podemos poner una parte del texto por ejemplo <span style="color : rgb(203, 9, 9);" </span> con
+                letra roja</p>
+
+        <p>voy a realizar 2 cajas con la etiqueta div</p>
+
+        <div class="bg-green">Caja1</div>
+        <div class="bg-azul-o">Caja2</div>
+
+        <!------ PIE DE PAGINA ------>
+        <footer>
+            <h1 class="bg-wineRed text-center text-white py-3">&copy; Paula Pulgar</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

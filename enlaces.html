@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!----- PAGINA WEB ----->
+<body>
+    <div class="container shadow">
+        <!----- CABECERA ----->
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/Imagen-Logo-Friki.png" alt="logoFriki" width="90" ></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!----- CUERPO DE PAGINA WEB ----->
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-wineRed text-white py-3">Ejercicios HTML5/CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="home">
+                    <h1 class="text-center">Tipos de enlaces</h1>
+                </div>
+
+                <p>Los enlaces, links, hipevinculos... se hacen con la etiqueta a</p>
+
+                <!--Tipos de enlaces-->
+
+                <h2>Enlace a una pagina de nuestra web</h2>
+                <a href="index.html">Ir a Home</a>
+                
+                <h2>Enlace a una pagina de internet</h2>
+                <a href="https://www.google.com">Ir a Google </a>
+
+               <h2>Enlace a una pagina separada</h2> 
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ir a Youtube</a>
+               
+               <h2>Enlace a una funcion de javascript para q aparezca un popup</h2> 
+               <a href="javascript:alert('Wenas!')" > Pulsa...</a>
+               
+               <h2>Enlace a un email </h2> 
+               <a href="mailto:webmaster@ies-azarquiel.es" > Mandar E-mail</a>
+
+               <H2>Enlace en una imagen</H2>
+               <a href="https://www.pinterest.es/">
+                <img src="img/Logo-pinterest.png" alt="Logo Pinterest" width="40"> 
+               </a> 
+               <!------------------>
+
+            </div>
+        </main>
+
+        <!------ PIE DE PAGINA ------>
+        <footer>
+            <h1 class="bg-wineRed text-center text-white py-3">&copy; Paula Pulgar</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

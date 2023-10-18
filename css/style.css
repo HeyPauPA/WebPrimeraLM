@@ -1,0 +1,309 @@
+/*HOJA DE ESTILOS DE LA AGINA WEB*/
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/*------------------------------------ PARTE PROFESOR ----------------------------------------*/
+/*------------------ AJUSTE DE PAGINA WEB PARA TODO DISPOSITIVO -------------------------*/
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*---SOMBRA BORDE PAGINA WEB---*/
+.shadow 
+{
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/*LISTA DE NAVEGACION*/
+nav li 
+{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ALINEACION DE TEXTO */
+.text-center 
+{
+    text-align: center;
+}
+
+/*------------ PADDINGS ------------*/
+/*PADDING ARRIBA-ABAJO*/
+.py-3 
+{
+    padding: 16px 0;
+}
+/*PADDING DERECHA-IZQUIERDA*/
+.px-3 
+{
+    padding: 0 16px;
+}
+/*PADDING ALREDEDOR*/
+.p-3 
+{
+    padding: 16px;
+}
+/*----------------------------------*/
+
+/* ------- FONDOS -------*/
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+
+/*---- COLOR DE TEXTO ----*/
+.text-white 
+{
+    color: white;
+}
+
+/*------- BORDES DEL PIE DE PAGINA -------*/
+
+/*BORDE DERECHO PIE DE PAGINA*/
+footer h1 
+{
+    border-bottom-left-radius: 10px;
+}
+
+/*BORDE IZQUIERDO PIE DE PAGINA*/
+footer h1 
+{
+    border-bottom-right-radius: 10px;
+}
+/*---------------------------------------*/
+h1 {
+    margin: 0;
+}
+
+#btnmenu 
+{
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+/* ----------------- CSS DE LAS PRACTICAS -----------------*/
+#home img {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/*--- COLOR LETRAS ---*/
+/*ROJO*/
+.text-red 
+{
+    color: red;
+}
+
+/*--------------------*/
+
+
+/*---- COLOR FONDO ----*/
+.bg-blue {
+    background-color: blue; /*fondo*/
+    color: white;           /*Color letras*/
+}
+.bg-green {
+    background-color: green;
+}
+.bg-white {
+    background-color: white;
+}
+.bg-wineRed
+{
+    background-color: rgb(161, 78, 125);
+}
+/*--------------------*/
+
+.text-underline
+{
+    text-decoration: underline;
+}
+/*1Nombre estilo|  |a q afecta| */
+        .dl-color dt
+{
+background-color: black;
+color: aqua;
+
+}
+/*----- EDICION DE LISTAS -----*/
+/*ol solo 1 para q afecte a partir de la primera lista organizada*/
+#listaedit ol 
+{
+list-style-type: upper-alpha;
+}
+/*ol 2 para q afecte a partir de la segunda lista organizada*/
+#listaedit2 ol ol 
+{
+list-style-type:upper-roman;
+}
+/*ol 3 para q afecte a partir de la tercera lista organizada*/
+#listaedit3 ol ol ol 
+{
+list-style: lower-roman;
+}
+#listaeditImagen ol ol
+{
+list-style-image:url(../img/Imagen-Pokeball-Lista.jpg);
+}
+#listaeditImagen2 ol ol ol
+{
+list-style-image:none;
+}
+.t-center
+{
+    width: 70%;
+    margin: 0 auto;
+}
+.t-center th
+{
+    background-color: rgb(2, 2, 63);
+    color: white;
+}
