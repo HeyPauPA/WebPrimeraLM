@@ -368,4 +368,32 @@ background-color:rgb(210, 210, 251) ;
 {
 background-color:rgb(165, 218, 156) ;
 }
+.buttons
+{
+background-color: rgb(9, 9, 66);
+color: #f0f0f0;
+}
+/*POSICIONAMIENTO DE FORMULARIOS*/
 
+.posicionLogin
+{
+width: 30%;
+float: left;
+padding: 40px;
+}
+.posicioncd
+{
+width: 50%;
+clear: both;
+}
+.posicionRegistro
+{
+width: 50%;
+float: right;
+padding: 40px;
+}
+.posicionRegistrotx
+{
+width: 50%;
+float: right;
+}

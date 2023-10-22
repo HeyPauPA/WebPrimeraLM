@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <!----- PAGINA WEB ----->
+
 <body>
     <div class="container shadow">
         <!----- CABECERA ----->
@@ -72,19 +73,175 @@
                     <h1 class="text-center">Formularios</h1>
                 </div>
 
+                <!-- FORMULARIO 1-->
                 <h3>Formulario de login</h3>
-
-                <fieldset>
+                <fieldset class="posicionLogin">
                     <legend>Login</legend>
+                    <p>
+                        Nombre: <!--- Se puede hacer de las 2 maneras --->
+                        <input type="text" name="nombre" id="" placeholder=" ">
+                    </p>
+                    <p>
+                        <label for="">Contraseña :</label> <!----- o con esta ----->
+                        <input type="text" name="Contraseña" id="">
+                    </p>
+                    <p>
+                        <input class="buttons" type="submit" value="Login">
+                    </p>
                 </fieldset>
-                <form action="" method="post"></form>
-            </div>
-        </main>
 
-        <!------ PIE DE PAGINA ------>
-        <footer>
-            <h1 class="bg-wineRed text-center text-white py-3">&copy; Paula Pulgar</h1>
-        </footer>
+                <!-- FORMULARIO 2-->
+                <h3 class="posicionRegistrotx">Formulario registro</h3>
+                <fieldset class="posicionRegistro">
+
+                    <legend>Registro</legend>
+
+                    <p>
+                        <label for="">input type text</label>
+                        <input type="text" name="nombre" id="" placeholder="Name">
+                    </p>
+                    <p>
+                        <label for="">input type password</label>
+                        <input type="password" name="contraseña" id="" placeholder="Password">
+                    </p>
+
+                    <p>
+                        Fecha Nacimiento: (Lista simple -> tag select)
+                        <br>
+                        <select name="dia" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <select name="mes" id="">
+                            <option value="1">enero</option>
+                            <option value="2">febrero</option>
+                            <option value="3">marzo</option>
+                            <option value="4">abril</option>
+                        </select>
+
+                        <select name="anio" id="">
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                        </select>
+
+                    <p>
+                        Comentario (tag -> textarea)
+                        <br><textarea name="Comentario" id="" cols="30" rows="5"></textarea>
+                    </p>
+
+                    <p>
+                        Aficiones: (tag input type checkbox para elecciones de 0 o todas las casillas)
+
+                        <br>
+                        <input type="checkbox" name="Cantar" id="">Cantar<br>
+                        <input type="checkbox" name="cine" id=""> Cine <br>
+                        <input type="checkbox" name="deportes" id=""> Deportes <br>
+                        <input type="checkbox" name="lectura" id=""> Lectura <br>
+                        <input type="checkbox" name="viajar" id=""> Viajar <br>
+                    </p>
+                    <p>
+                        Estado civil: (tag input type radio para solo una eleccion)</p>
+
+                    <input type="radio" name="ec" id=""> Casado/a <br>
+                    <input type="radio" name="ec" id=""> Soltero/a <br>
+                    <input type="radio" name="ec" id=""> Viudo/a <br>
+                    <input type="radio" name="ec" id=""> Otros <br>
+                    </p>
+                    <p>
+                        Provincia: (tag select + multiple y el tamaño)<br>
+
+                        <select name="provincia" id="" multiple size="5">
+                            <option value="1">Albacete</option>
+                            <option value="2">Ciudad Real</option>
+                            <option value="3">Cuenca</option>
+                            <option value="4">Guadalajara</option>
+                            <option value="5">Toledo</option>
+                        </select>
+                    </p>
+                    <p>
+                        Foto: (tag input type file)
+                        <br><input type="file" name="foto" id="">
+                    </p>
+                    <p>
+                        <input class="buttons" type="submit" value="Enviar" class="btn btn-blue">
+                    </p>
+
+                    <!-- FORMULARIO 3-->
+                </fieldset>
+
+                </form>
+                <div class="cb"></div>
+
+                <form action="kk.php" method="post" class="posicioncd">
+                    <h3 class="text-center"><br>FORMULARIO CON ELEMENTOS HTML5:</h3>
+                    <fieldset >
+                        <legend>Inputs HTML5</legend>
+                        <p>
+                            <label for="">Color:</label>
+                            <input type="color" name="color" id="">
+                        </p>
+                        <p>
+                            <label for="">Date:</label>
+                            <input type="date" name="date" id="">
+                        </p>
+                        <p>
+                            <label for="">Datetime:</label>
+                            <input type="datetime" name="datetime" id="">
+                        </p>
+                        <p>
+                            <label for="">Datetime-local:</label>
+                            <input type="datetime-local" name="datetime-local" id="">
+                        </p>
+                        <p>
+                            <label for="">Email:</label>
+                            <input type="email" name="email" id="">
+                        </p>
+                        <p>
+                            <label for="">Month:</label>
+                            <input type="month" name="month" id="">
+                        </p>
+                        <p>
+                            <label for="">Number:</label>
+                            <input type="number" name="number" id="" step="2" min="10" max="30">
+                        </p>
+                        <p>
+                            <label for="">Range:</label>
+                            <input type="range" name="range" id="" step="2" min="10" max="30">
+                        </p>
+                        <p>
+                            <label for="">Tel:</label>
+                            <input type="tel" name="tel" id="">
+                        </p>
+                        <p>
+                            <label for="">Time:</label>
+                            <input type="time" name="time" id="">
+                        </p>
+                        <p>
+                            <label for="">Url:</label>
+                            <input type="url" name="url" id="">
+                        </p>
+                        <p>
+                            <label for="">Week:</label>
+                            <input type="week" name="week" id="">
+                        </p>
+                        <p>
+                            <input class="buttons" type="submit" value="Aceptar" id="" class="btn btn-red">
+                        </p>
+                    </fieldset>
+                </form>
+
+            </div>
+    </div>
+
+    </div>
+    </main>
+
+    <!------ PIE DE PAGINA ------>
+    <footer>
+        <h1 class="bg-wineRed text-center text-white py-3">&copy; Paula Pulgar</h1>
+    </footer>
     </div>
     <script>
         function opendrawer() {
