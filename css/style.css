@@ -291,7 +291,7 @@ list-style: lower-roman;
 }
 #listaeditImagen ol ol
 {
-list-style-image:url(../img/Imagen-Pokeball-Lista.jpg);
+list-style-image:url(../img/Imagen-Pokeball-Lista.png);
 }
 #listaeditImagen2 ol ol ol
 {
@@ -307,3 +307,65 @@ list-style-image:none;
     background-color: rgb(2, 2, 63);
     color: white;
 }
+.tableColorFilas1 
+{
+    background-color: rgb(127, 255, 212);
+}
+.tableColorFilas2
+{
+    background-color: rgb(207, 220, 248);
+}
+.text-center-Table td
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.text-center-Tableth th
+{
+    text-align: center;
+    margin: 0 auto;
+}
+tbHorario {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+tbHorarioo td {
+    color: black;
+}
+tbHorario th {
+    background-color: #f0f0f0;
+    color: #008080;
+}
+
+/*COLORES HORARIO*/
+.colorTB-ENDE 
+{
+background-color:rgb(180, 179, 110) ;
+}
+.colorTB-LMSG 
+{
+background-color:rgb(247, 202, 201);
+}
+.colorTB-ING 
+{
+background-color:rgb(119, 179, 235) ;
+}
+.colorTB-PROG 
+{
+    background-color:rgb(179, 123, 122) ;
+}
+.colorTB-FOL 
+{
+    background-color:rgb(128, 129, 187) ;
+}
+.colorTB-BDD 
+{
+background-color:rgb(210, 210, 251) ;
+}
+.colorTB-SISI 
+{
+background-color:rgb(165, 218, 156) ;
+}
+

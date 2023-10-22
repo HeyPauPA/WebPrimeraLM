@@ -77,7 +77,7 @@
 
                 <h2 class="text-underline">Diferentes tipos de tablas</h2>
                 <h3>Tabla de encabezados de fila</h3>
-                <table class="t-center" border="1" >
+                <table class="t-center" border="1">
                     <tr>
                         <th>File</th>
                         <th>Edit</th>
@@ -140,6 +140,199 @@
                     </tr>
                 </table>
 
+                <h3>Tabla con combinaciones de celdas</h3>
+                <table border="1">
+                    <tr>
+                        <th>File</th>
+                        <th>Edit</th>
+                        <th>Selection</th>
+                        <th>Views</th>
+                        <th>Go</th>
+                    </tr>
+                    <tr>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Celda</td>
+                        <td colspan="3">Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                    <tr>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                </table>
+
+                <h3>Tabla con diferente diseño en filas pares e impares</h3>
+                <table border="1">
+                    <caption>S1DAM</caption>
+                    <tr class="tableColorFilas1">
+                        <th>File</th>
+                        <th>Edit</th>
+                        <th>Selection</th>
+                        <th>Views</th>
+                        <th>Go</th>
+                    </tr>
+                    <tr class="tableColorFilas2">
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                    <tr class="tableColorFilas1">
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                    <tr class="tableColorFilas2">
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                        <td>Celda</td>
+                    </tr>
+                </table>
+
+                <h3>Horario</h3>
+                <table class="tbHorario" border="1">
+                    <tr class="text-center-Tableth">
+                        <th class="text-center-Table" colspan="6">S1DAM</th>
+                    </tr>
+                    <tr>
+                        <th>/ ~ \</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>8:15 <br> 9:10</th>
+                        <td class="colorTB-LMSG" rowspan="2" >
+                            LMSG
+                            <br> Puli. MO, FrJo
+                            <br>(1 Bs302)
+                        </td>
+                        <td class="colorTB-ING">
+                            ING
+                            <br>Corr. Pi, JoMa
+                            <br>(1 8-302)
+                        </td>
+                        <td class="colorTB-PROG" rowspan="2">
+                            PROG
+                            <br>Mart Ca, JoJa
+                            <br>(1 B-302)
+                        </td>
+                        <td class="colorTB-PROG" rowspan="2">
+                            PROG
+                            <br>Mart Ca, JoJa
+                            <br>(1 B-302)
+                        </td>
+                        <td class="colorTB-BDD"rowspan="2">
+                            BDD
+                            <br> Leon Di, JuEf
+                            <br> (1 8-302)
+                        </td>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>9:10 <br> 10:05</th>
+                        <td rowspan="2" class="colorTB-BDD">
+                            BDD
+                            <br> Leon Di, JuEf
+                            <br> (1 8-302)
+                        </td>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>10:05 <br> 11:00</th>
+                        <td class="colorTB-ING">
+                            ING
+                            <br>Corr. Pi, JoMa
+                            <br>(1 8-302)
+                        </td>
+                        <td class="colorTB-BDD">
+                            BDD
+                            <br> Leon Di, JuEf
+                            <br> (1 8-302)
+                        </td>
+                        </td>
+                        <td class="colorTB-ENDE">
+                            ENDE
+                            <br> Polo or, Ed
+                            <br> (1 8-302)
+                        </td>
+                        <td class="colorTB-FOL">
+                            FOL
+                            <br> Marín Ca, RoMa
+                            <br>(1 8-302)
+                        </td>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th></th>
+                        <th colspan="5">recreo</th>
+
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>11:30 <br>12:25</th>
+                        <td rowspan="2" class="colorTB-PROG">
+                            PROG
+                            <br>Mart Ca, JoJa
+                            <br>(1 B-302)
+                        </td>
+                        <td class="colorTB-ENDE">
+                            ENDE
+                            <br> Polo or, Ed
+                            <br> (1 8-302)
+                        </td>
+                        <td class="colorTB-BDD"> BDD
+                            <br> Leon Di, JuEf
+                            <br> (1 8-302)
+                        </td>
+                        <td rowspan="2" class="colorTB-SISI">
+                            SISI
+                            <br>Reoy. He, ÓsAn
+                            <br>(1 B-302)
+                        </td>
+                        <td rowspan="2" class="colorTB-SISI">
+                            SISI
+                            <br>Reoy. He, ÓsAn
+                            <br>(1 B-302)
+                        </td>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>12:25 <br> 13:20</th>
+                        <td rowspan="2" class="colorTB-SISI">
+                            SISI
+                            <br>Reoy. He, ÓsAn
+                            <br>(1 B-302)
+                        </td>
+                        <td rowspan="2" class="colorTB-LMSG">
+                            LMSG
+                            <br> Puli. MO, FrJo
+                            <br>(1 Bs302)
+                        </td>
+                    </tr>
+                    <tr class="text-center-Table">
+                        <th>13:20 <br> 14:15</th>
+                        <td class="colorTB-FOL">FOL
+                            <br> Marín Ca, RoMa
+                            <br>(1 8-302)</td>
+                        <td class="colorTB-FOL">FOL
+                            <br> Marín Ca, RoMa
+                            <br>(1 8-302)</td>
+                        <td class="colorTB-ENDE"> ENDE
+                            <br> Polo or, Ed
+                            <br> (1 8-302)</td>
+                    </tr>
+                </table>
             </div>
         </main>
 
